@@ -18,3 +18,8 @@ TP #3
 * I will change the return to render_template(); also make 'Hello World!' a string and store it in a variable.
 * Use Jinja to inact code - testing if it works.
 * Don't forget to put the html page & variable=variable into the render_template() !
+
+TP #4
+* That didn't work :(
+* I don't understand why my jinja isn't working, what I will do is test the html page itself.
+* If that works then test jinja with the "extends" page when I create the homepage.
