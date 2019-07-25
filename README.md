@@ -2,3 +2,4 @@ This is my first attempt at creating a jobs log app using Python, Flask, Postgre
 
  I have used a Flask-Heroku template provided by: https://github.com/Vetronus/heroku-flask-template.
 
+Test the app: https://sinclair-python-akoto-jobs-log.herokuapp.com
