@@ -1,8 +1,8 @@
 DROP TABLE if exists LogTable;
 CREATE TABLE LogTable (
   id SERIAL PRIMARY KEY,
-  Date_Entry TIMESTAMP NOT NULL,
-  Time_Entry TIMESTAMP NOT NULL,
+  Date_Entry TIMESTAMP,
+  Time_Entry TIMESTAMP,
   Job VARCHAR,
   Description VARCHAR,
   Outcome VARCHAR,

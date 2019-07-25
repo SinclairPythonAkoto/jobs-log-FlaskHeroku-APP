@@ -36,3 +36,8 @@ TP #6
 * import os & psycopg2 and create a schema then test it.
 * Change the code in the py file to include the py code from myfirst-flask-herokuAPP - but change it around slightly.
 * Inititilize the database then push to heroku master
+
+TP #7
+* The inititilization of the database worked but the page did not run so I looking at other ways to connect to the database.
+* Found another way through psycopg2, so I will make an attempt by using that.
+* Firstly, try see if I can fix a bug with a correction of spelling..

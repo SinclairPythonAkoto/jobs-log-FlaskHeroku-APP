@@ -36,7 +36,7 @@ def home():
         time_stamp = strftime("%H:%M", gmtime()) # Time_Entry in LogTable
         
         cur.execute("INSERT INTO LogTable (Date_Entry, Time_Entry, Job, Description, Outcome, Comments, Date_Stamp, Time_Stamp VALUES (:date_entry,:time_entry,:job,:description,:outcome,:comments,:date_stamp,time_stamp)", {"Date_Entry":date_entry, "Time_Entry":time_entry, "Job":job, "Description":description, "Outcome":outcome, "Comments":comments, "Date_Stamp":date_stamp, "Time_Stamp":time_stamp})
-        db_conn.commit()
+        g.db_conn.commit()
         
         return redirect(url_for("home"))
 
