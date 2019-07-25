@@ -23,3 +23,7 @@ TP #4
 * That didn't work :(
 * I don't understand why my jinja isn't working, what I will do is test the html page itself.
 * If that works then test jinja with the "extends" page when I create the homepage.
+* This works!
+
+TP #5
+* Create a homepage and use jinja as I would in my orginal jobs log app.
