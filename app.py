@@ -1,16 +1,13 @@
 from flask import Flask, render_template, request, redirect, url_for
+from time import gmtime, strftime
 
 
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET', 'POST'])
+@app.route('/')
 def home():
-	if request.method == "GET":
-    	return render_template("homepage.html")
- 
-
-
+   	return render_template("homepage.html")
 
 
 
