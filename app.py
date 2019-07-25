@@ -21,3 +21,6 @@ def index():
     # cur.execute("SELECT * FROM country;")
     # return render_template('index.html', countries=cur.fetchall())
     return "Sinclair loves Shalieka ! 24th July 2019."
+
+if __name__ == '__main__':
+    app.run(debug=True)
