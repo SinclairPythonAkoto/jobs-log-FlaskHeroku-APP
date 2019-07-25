@@ -28,6 +28,12 @@ STEPS I MADE
 9. Now set your Python path by: 'heroku config:set PYTHONPATH='
 I have left that empty because you should really keep it a secret.
 
+10. Now change the route(s) to your own in app.py & include your html files in the templates folder.  Can view thought_process.md for step by step process.
+
+11. Inititiate your database with Heroku (in Bash).
+
+12. Push to heroku master and run your app!
+
 
 TIPS
 
