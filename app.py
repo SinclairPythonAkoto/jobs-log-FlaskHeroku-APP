@@ -11,7 +11,7 @@ app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'XYZ')
 
 def connect_db():
     return psycopg2.connect(os.environ.get('DATABASE_URL'))
-
+ 
 
 @app.before_request
 def before_request():
@@ -20,7 +20,13 @@ def before_request():
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
-	cur = g.db_conn.cursor()
+    connection = psycopg2.connect(user = "postgres",
+                              password = "161086",
+                              host = "ec2-174-129-226-234.compute-1.amazonaws.com",
+                              port = "5432",
+                              database = "dfejjkn0m6m8hn")
+    cur = connection.cursor()
+    
 	entry = cur.execute("SELECT * FROM LogTable")
 
 	if request.method == 'GET':
