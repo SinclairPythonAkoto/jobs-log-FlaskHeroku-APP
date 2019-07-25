@@ -2,7 +2,7 @@ THOUGHT PROCESS DOCUMENTATION
 
 After successfully loading the Flask Heroku template onto my repository, I changed some of the data in app.py & the contemt of the templates folder.
 
-The documentation of my thought process is available below.
+The documentation of my thought process is available below; from start to completion of jobs log web app.
 
 TP #1
 * Delete old files and change python file
@@ -11,3 +11,10 @@ TP #1
 
 TP #2
 * The above didn't work, so delete the files and start with basic 'Hello World' route to test if it works.
+* This worked!
+
+TP #3
+* Now I will test index.html page to see if it works.
+* I will change the return to render_template(); also make 'Hello World!' a string and store it in a variable.
+* Use Jinja to inact code - testing if it works.
+* Don't forget to put the html page & variable=variable into the render_template() !
