@@ -27,3 +27,12 @@ TP #4
 
 TP #5
 * Create a homepage and use jinja as I would in my orginal jobs log app.
+* Changes to the app and including homepage.html works
+* By setting {% extends "index.html" %} at the top of the homepage file, jinja accesses the data from index.html.
+* The next step is to include a 'GET' & 'POST' method in the in the homepage route.
+
+TP #6
+* I need to create the database - so that means I need to create the scheme and maybe test it by creating some test data to input.
+* import os & psycopg2 and create a schima then test it.
+* Change the code in the py file to include the py code from myfirst-flask-herokuAPP - but change it around slightly.
+* Inititilize the database then push to heroku master
