@@ -1,5 +1,5 @@
 import os
-import psycopg2
+
 from flask import Flask, render_template, request, redirect, url_for, g
 from time import gmtime, strftime
 
@@ -7,9 +7,11 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import scoped_session, sessionmaker
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://dwsucfpgbapscm:ab6db8b3d1a814ba8fd31acf9b9235191b8ef4dffc658317f326cd80bfb4f514@ec2-174-129-209-212.compute-1.amazonaws.com:5432/d7p546rpkautd7'
+db = SQLAlchemy(app) 
 
-engine = create_engine("postgres://postgres:161086@ec2-174-129-226-234.compute-1.amazonaws.com:5432/dfejjkn0m6m8hn")
-db = scoped_session(sessionmaker(bind=engine))
+# engine = create_engine("postgres://postgres:161086@ec2-174-129-226-234.compute-1.amazonaws.com:5432/dfejjkn0m6m8hn")
+# db = scoped_session(sessionmaker(bind=engine))
 
 # app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'XYZ')
 
@@ -34,7 +36,7 @@ def home():
 		return render_template("homepage.html", entry=entry)
 	else:
 		date_entry = request.form.get("job_date") # Date in LogTable
-        time_entry = request.form.get("job_time") # Time in LogTable
+		time_entry = request.form.get("job_time") # Time in LogTable
         job = request.form.get("job_options") # Job in LogTable
         description = request.form.get("description") # Description in LogTable
         outcome = request.form.get("job_outcome") # Outcome in LogTable

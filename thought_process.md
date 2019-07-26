@@ -54,6 +54,8 @@ TP #8
 
 TP #10
 * Try create engine method to connect to my postgres (like in my other heroku walk-through)
+* Use sqlalchemy & create engine to try connect to my page.
+* This didn't work; try to fiund out if there are bug errors within my attempted solution or find a different solution.
 
 <!-- TP #9
 * I know I can create web pages (without a database) and make it run through Heroku
