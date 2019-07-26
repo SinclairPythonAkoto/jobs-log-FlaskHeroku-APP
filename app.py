@@ -6,7 +6,7 @@ from time import gmtime, strftime
 
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'XYZ')
+# app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'XYZ')
 
 
 # def connect_db():
@@ -27,7 +27,7 @@ def home():
 	if request.method == 'GET':
 		# db.execute("SELECT * FROM LogTable")
 		# entry = db.fetchall()
-		return render_template("homepage.html", entry=entry)
+		return render_template("homepage.html")#, entry=entry)
 	else:
 		date_entry = request.form.get("job_date") # Date in LogTable
         time_entry = request.form.get("job_time") # Time in LogTable
