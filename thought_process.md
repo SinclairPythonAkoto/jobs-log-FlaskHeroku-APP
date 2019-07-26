@@ -50,6 +50,7 @@ TP #8
 * Personally, I'm beginning to think that I need to put psycopg2.connect(os.environ.get('DATABASE_URL')) into a variable and see if I can connect to the database that way in the homepage route.
 * If this doesn't work then seek other solutions.
 * After watching a tutorial on YouTube (Uisning Python to query Postgres) I am startting to believe I have queried the postgres database all wrong! I think I will try the pyscopg2 method to connect to my database.
+* This didnt work - need to find another solution.
 
 <!-- TP #9
 * I know I can create web pages (without a database) and make it run through Heroku
