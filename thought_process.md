@@ -45,12 +45,15 @@ TP #7
 
 TP #8
 * I have put connection = pyscopg2.connect(....) inside the home route function; recorrect thi placing the connection in the global (place it out of the home function)
-* Remove or delete the before_request function % connect_db function.
+* Remove or delete the before_request function & connect_db function.
 * I am testing if I can connect to the database through this way.
 * Personally, I'm beginning to think that I need to put psycopg2.connect(os.environ.get('DATABASE_URL')) into a variable and see if I can connect to the database that way in the homepage route.
 * If this doesn't work then seek other solutions.
 * After watching a tutorial on YouTube (Uisning Python to query Postgres) I am startting to believe I have queried the postgres database all wrong! I think I will try the pyscopg2 method to connect to my database.
 * This didnt work - need to find another solution.
+
+TP #10
+* Try create engine method to connect to my postgres (like in my other heroku walk-through)
 
 <!-- TP #9
 * I know I can create web pages (without a database) and make it run through Heroku
