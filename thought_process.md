@@ -52,10 +52,20 @@ TP #8
 * After watching a tutorial on YouTube (Uisning Python to query Postgres) I am startting to believe I have queried the postgres database all wrong! I think I will try the pyscopg2 method to connect to my database.
 * This didnt work - need to find another solution.
 
-TP #10
+TP #9
 * Try create engine method to connect to my postgres (like in my other heroku walk-through)
 * Use sqlalchemy & create engine to try connect to my page.
 * This didn't work; try to fiund out if there are bug errors within my attempted solution or find a different solution.
+
+TP #10 
+* I found a way of connecting to your database through Flask & Flask-SQLAlchemey.
+* I really want to avoid using stackoverflow.com so I will attempt to use the example I found.
+* This uses a class to create your te mode of your database then create it in the python termina. 
+* What I will do is follow some of the steps as the walk-through but not all as some files have already been created (procfile, wsgi etc)
+* I have noticed that this walk-through uses a different database connection method
+* I might need to test this on my local first...
+* THINGS TO THINK ABOUT: What is the repr function? How will that be applied to my database class model? What are the new add ons and why do I need them?
+
 
 <!-- TP #9
 * I know I can create web pages (without a database) and make it run through Heroku
