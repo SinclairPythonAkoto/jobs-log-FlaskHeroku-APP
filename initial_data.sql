@@ -1,0 +1,6 @@
+-- heroku pg:psql < initial_data.sql
+
+-- Jobs log table [inputting data]
+INSERT INTO LogTable (id, Date_Entry, Time_Entry, Job, Description, Outcome, Comments, Date_stamp, Time_Stamp) VALUES (1, '16-10-1986', '01:00', 'Security Officer', 'small description goes here', 'Random oucome', 'random comment', (to_timestamp('27-07-2019 09:00:00', 'dd-mm-yyyy hh24:mi:ss'));
+	INSERT INTO LogTable (id, Date_Entry, Time_Entry, Job, Description, Outcome, Comments, Date_stamp, Time_Stamp) VALUES (2, '01-03-1991', '10:00', 'Emerites Staff', 'Working in Dubai', 'Moving to UK', 'Had enough of Dubai!', (to_timestamp('27-07-2019 09:10:00', 'dd-mm-yyyy hh24:mi:ss'));
+		INSERT INTO LogTable (id, Date_Entry, Time_Entry, Job, Description, Outcome, Comments, Date_stamp, Time_Stamp) VALUES (1, '16-08-2018', '12:00', 'Husband', 'Got married in Barbados on the beach', 'She said I do!', 'this day is still the best day of my life; wish I would relive it all again!', (to_timestamp('27-07-2019 19:00:00', 'dd-mm-yyyy hh24:mi:ss'));
